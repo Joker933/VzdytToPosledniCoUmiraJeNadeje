@@ -2,41 +2,57 @@ package cz.educanet.milujuzivotlmaoxd.models;
 
 public class Animals {
 
-    private String name;
-    private Integer age;
-    private Integer weight;
-    private String gender;
+    public String jmeno;
+    public int vek;
+    public double vaha;
+    public int id;
+    public String pohlavi;
 
-    public Animals( String name, Integer age, Integer weight,  String gender){
-        this.name = name;
-        this.age = age;
-        this.weight = weight;
-        this.gender = gender;
-    }
-
-    public String getName(){
-        return name;
-    }
-    public Integer getAge(){
-        return age;
-    }
-    public Integer getWeight(){
-        return weight;
-    }
-    public String getGender(){
-        return gender;
+    public Animals(String jmeno, int vek, double vaha, String pohlavi){
+        this.jmeno = jmeno;
+        this.vek = vek;
+        this.vaha = vaha;
+        this.pohlavi = pohlavi;
     }
 
-    public void setName(String name){
-        this.name = name;
+    public int getId(){
+        return id;
     }
-    public void setAge(Integer age){
-        this.age = age;
+
+    public String getjmeno(){
+        return jmeno;
     }
-    public void setWeight(Integer weight){
-        this.weight = weight;
+
+    public int getvek(){
+        return vek;
     }
-    public void setGender(String gender){
-        this.gender= gender;
+
+    public double getvaha(){
+        return vaha;
     }
+
+    public String getpohlavi(){
+        return pohlavi;
+    }
+
+    public void setjmeno(String jmeno){
+        this.jmeno = jmeno;
+    }
+
+    public void setvek(int vek){
+        this.vek = vek;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public void setvaha(double vaha){
+        this.vaha = vaha;
+    }
+
+    public void setpohlavi(String pohlavi){
+        this.pohlavi= pohlavi;
+    }
+
 }
